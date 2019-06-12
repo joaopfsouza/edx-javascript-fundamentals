@@ -1,0 +1,46 @@
+img {
+    height: 30%;
+    width: 30%;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px teal;
+}
+
+p,
+img {
+    margin-left: 50px;
+}
+
+p,
+h1,
+h2 {
+    font-family: 'caveat';
+    font-family: cursive;
+
+}
+
+h2 {
+    color: chocolate;
+}
+
+h1 {
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-left: 20px solid crimson;
+    text-align: right;
+    padding: 30px;
+    width: 50%;
+    border-radius: 10px;
+}
+
+h1:hover {
+    border-left: 20px solid blue;
+}
+
+img:hover {
+    box-shadow: 5px 5px 10px rgb(250, 150, 20);
+}
+
+.important {
+    color: red;
+}
