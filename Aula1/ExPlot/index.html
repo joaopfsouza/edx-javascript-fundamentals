@@ -11,7 +11,7 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/spectrum/1.6.1/spectrum.min.css">
     <script src="https://d3js.org/d3.v3.min.js"></script>
     <script src="https://mauriciopoppe.github.io/function-plot/js/function-plot.js"></script>
-    <script src="main.js"></script>
+    
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -19,46 +19,40 @@
 
     <h2>Interactive Function Plotter</h2>
     <section id="plotSettings">
-        
-        <label for="xMin">xMin:</label>
-        <br>
-        <input type="text" id="xmin">
-        <p></p>
-
 
         <label for="xMin">xMin:</label>
         <br>
-        <input type="text" id="xmin">
+        <input type="number" id="xMin" value=0 step=0.5 oninput="plot();">
         <p></p>
-
 
         <label for="xMax">xMax:</label>
         <br>
-        <input type="text" id="xmax">
+        <input type="number" id="xMax" value="6.28" step="0.5" oninput="plot();">
         <p></p>
 
         <label for="yMin">yMin:</label>
         <br>
-        <input type="text" id="ymin">
+        <input type="number" id="yMin" value=-1 step=0.5 oninput="plot();">
         <p></p>
 
         <label for="yMax">yMax:</label>
         <br>
-        <input type="text" id="ymax">
+        <input type="number" id="yMax" value=1 step=0.5 oninput="plot();">
         <p></p>
 
-        <label for="funcPlot">Function to plot:</label>
-        <br>
         
-        <input type="text" id="funcplot">
-        <p></p>
-
-        <label for="yMax"> Color: </label>
+        <label for="color"> Color: </label>
         <!-- <input type="color" id="color" onchange="plot();"> -->
-        <input type="color" id="color">
-
+        <input type="color" id="color" onchange="plot();">
 
         <p></p>
+
+        <label for="function">Function to plot:</label>
+        <br>
+
+        <input type="text" id="function">
+        <p></p>
+
 
         <button type="submit" onclick="plot();">Plot</button>
     </section>
@@ -68,5 +62,7 @@
     </section>
 
 </body>
+
+<script src="main.js"></script>
 
 </html>

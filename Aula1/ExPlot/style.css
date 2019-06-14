@@ -17,7 +17,7 @@ section {
     width: 150px;
 }
 
-input[type=text]{
+input[type=number],input[type=text]{
     width: 100px;
 }
 
